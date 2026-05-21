@@ -174,3 +174,17 @@ img { max-width: 100%; display: block; }
   .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
   .hero-grid { grid-template-columns: 1fr; }
 }
+
+/* Responsive grid for 4-column card layout */
+@media (max-width: 1024px) {
+  .cards-4 { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 640px) {
+  .cards-4 { grid-template-columns: 1fr !important; }
+}
+
+/* Focus-visible for card links (service cards are <a> elements) */
+a.card:focus-visible {
+  outline: 2px solid var(--rose);
+  outline-offset: 3px;
+}
