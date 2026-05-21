@@ -150,6 +150,7 @@ img { max-width: 100%; display: block; }
   .info-strip > div { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,.2); padding: 10px 16px; width: 100%; justify-content: flex-start; }
   .info-strip > div:last-child { border-bottom: none; }
   .hebammenhilfe-section { grid-template-columns: 1fr; gap: 24px; padding: 36px 20px; }
+  .kontakt-cta { padding: 48px 20px !important; }
 }
 
 /* === SECTION UTILITY === */
@@ -201,4 +202,11 @@ a.card:focus-visible {
   outline: 2px solid var(--rose);
   outline-offset: 2px;
   border-radius: 3px;
+}
+
+/* Focus-visible for plain <a> links in dark sections */
+section a:not([class]):focus-visible {
+  outline: 2px solid var(--rose-light);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
