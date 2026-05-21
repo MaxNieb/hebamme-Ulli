@@ -223,3 +223,17 @@ input:focus-visible, textarea:focus-visible {
   outline-offset: 0;
   border-color: var(--rose) !important;
 }
+
+/* === MOBILE FEINSCHLIFF === */
+@media (max-width: 640px) {
+  /* Buttons full-width on mobile */
+  .btn-primary, .btn-outline { width: 100%; justify-content: center; }
+  /* Hero min-height reset */
+  .hero-grid { min-height: auto; }
+  /* Über-mich section on homepage */
+  [style*="grid-template-columns:1fr 1.3fr"] { grid-template-columns: 1fr !important; }
+  /* Kontakt-CTA section padding */
+  [style*="padding:80px 48px"] { padding: 48px 20px !important; }
+  [style*="padding:60px 48px"] { padding: 40px 20px !important; }
+  [style*="padding:70px 48px"] { padding: 40px 20px !important; }
+}

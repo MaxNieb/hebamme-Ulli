@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutzerklärung — Ulrike Bassenge, Hebamme Potsdam</title>
+  <meta name="description" content="Datenschutzerklärung der Website von Hebamme Ulrike Bassenge in Potsdam gemäß DSGVO.">
+  <link rel="canonical" href="https://www.ulrike-bassenge.de/datenschutz.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="site-nav" id="main-nav">
+  <a href="/" class="flex flex-col">
+    <span class="nav-logo-name">Ulrike Bassenge</span>
+    <span class="nav-logo-sub">Hebamme · Potsdam &amp; Berlin</span>
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="hebammenhilfe.html">Hebammenhilfe</a></li>
+    <li class="nav-dropdown">
+      <a href="#">Leistungen ▾</a>
+      <div class="nav-dropdown-menu">
+        <a href="schwangerschaft.html">Schwangerschaft</a>
+        <a href="geburtshilfe.html">Geburtshilfe</a>
+        <a href="wochenbett.html">Wochenbett</a>
+        <a href="stillen.html">Stillberatung</a>
+      </div>
+    </li>
+    <li><a href="ueber-mich.html">Über mich</a></li>
+    <li><a href="netzwerk.html">Netzwerk</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+  <a href="kontakt.html" class="btn-primary" style="white-space:nowrap;">Jetzt anfragen</a>
+</nav>
+
+<section style="background:var(--cream-mid);padding:60px 48px 50px;border-bottom:1px solid var(--sand);">
+  <p class="section-label" style="margin-bottom:12px;">Rechtliches</p>
+  <h1 class="heading-xl" style="max-width:640px;margin-bottom:16px;">Datenschutzerklärung</h1>
+</section>
+
+<main style="padding:60px 48px;max-width:720px;margin:0 auto;">
+  <h2 class="heading-md" style="margin-bottom:12px;">Verantwortliche</h2>
+  <p class="body-text" style="margin-bottom:20px;">Ulrike Bassenge, Haeckelstraße 1, 14471 Potsdam, <a href="mailto:info@ulrike-bassenge.de" style="color:var(--rose);">info@ulrike-bassenge.de</a></p>
+
+  <h2 class="heading-md" style="margin-bottom:12px;">Erhobene Daten</h2>
+  <p class="body-text" style="margin-bottom:20px;">Diese Website erhebt beim Besuch keine personenbezogenen Daten. Das Kontaktformular überträgt Ihre Eingaben verschlüsselt an den Dienst Formspree (formspree.io). Kontaktformulardaten werden zur Bearbeitung Ihrer Anfrage gespeichert. Widerruf jederzeit per E-Mail möglich.</p>
+
+  <h2 class="heading-md" style="margin-bottom:12px;">Externe Dienste</h2>
+  <p class="body-text" style="margin-bottom:20px;">Google Fonts werden direkt von Google-Servern geladen. Dabei kann Ihre IP-Adresse an Google übertragen werden. Weitere Infos: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--rose);">Google Datenschutzrichtlinien</a>.</p>
+
+  <h2 class="heading-md" style="margin-bottom:12px;">Ihre Rechte</h2>
+  <p class="body-text">Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit. Wenden Sie sich dazu an: <a href="mailto:info@ulrike-bassenge.de" style="color:var(--rose);">info@ulrike-bassenge.de</a></p>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">© 2026 Ulrike Bassenge · Hebamme Potsdam | <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+</script>
+</body>
+</html>
