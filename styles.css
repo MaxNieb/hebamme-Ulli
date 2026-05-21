@@ -13,8 +13,6 @@
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans:  'DM Sans', system-ui, sans-serif;
 
-  --section-pad-desktop: 70px 48px;
-  --section-pad-mobile:  40px 20px;
   --card-radius: 20px;
   --btn-radius:  40px;
 }
@@ -45,6 +43,8 @@ img { max-width: 100%; display: block; }
   transition: background .2s, transform .15s; cursor: pointer; border: none;
 }
 .btn-primary:hover { background: var(--rose-dark); transform: translateY(-1px); }
+.btn-primary:focus-visible { outline: 2px solid var(--rose-dark); outline-offset: 3px; }
+.btn-primary:active { transform: translateY(0); }
 
 .btn-ghost {
   display: inline-flex; align-items: center; gap: 4px;
@@ -53,6 +53,7 @@ img { max-width: 100%; display: block; }
   transition: color .2s, border-color .2s;
 }
 .btn-ghost:hover { color: var(--rose); border-color: var(--rose); }
+.btn-ghost:focus-visible { outline: 2px solid var(--rose); outline-offset: 3px; }
 
 .btn-outline {
   display: inline-flex; align-items: center; gap: 6px;
@@ -61,7 +62,8 @@ img { max-width: 100%; display: block; }
   font-size: 13px; font-weight: 600; font-family: var(--font-sans);
   transition: border-color .2s;
 }
-.btn-outline:hover { border-color: rgba(255,255,255,0.9); }
+.btn-outline:focus-visible { outline: 2px solid rgba(255,255,255,0.8); outline-offset: 3px; }
+.btn-outline:hover { border-color: rgba(255,255,255,0.9); background: rgba(255,255,255,0.1); }
 
 /* === SECTION LABELS === */
 .section-label {
@@ -93,6 +95,7 @@ img { max-width: 100%; display: block; }
 .nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
 .nav-links a  { font-size: 12px; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500; transition: color .2s; }
 .nav-links a:hover { color: var(--rose); }
+.nav-links a:focus-visible { color: var(--rose); outline: 2px solid var(--rose); outline-offset: 3px; border-radius: 3px; }
 .nav-dropdown { position: relative; }
 .nav-dropdown-menu {
   display: none; position: absolute; top: calc(100% + 12px); left: 50%;
@@ -108,7 +111,7 @@ img { max-width: 100%; display: block; }
 }
 .nav-dropdown-menu a:hover { background: var(--cream-mid); color: var(--rose); }
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
-.hamburger span { display: block; width: 24px; height: 2px; background: var(--rose-dark); border-radius: 2px; transition: all .3s; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--rose-dark); border-radius: 2px; transition: transform .3s, opacity .3s; }
 
 /* === FOOTER === */
 .site-footer {
@@ -122,13 +125,17 @@ img { max-width: 100%; display: block; }
 /* === MOBILE === */
 @media (max-width: 768px) {
   .site-nav { padding: 16px 20px; }
-  .nav-links { display: none; flex-direction: column; gap: 0; position: absolute; top: 100%; left: 0; right: 0; background: var(--cream); border-bottom: 1px solid var(--sand); padding: 8px 0; }
+  .nav-links { display: none; flex-direction: column; gap: 0; position: absolute; top: 100%; left: 0; right: 0; background: var(--cream); border-bottom: 1px solid var(--sand); padding: 8px 0; z-index: 99; }
   .nav-links.open { display: flex; }
   .nav-links a { padding: 12px 20px; text-transform: none; font-size: 14px; }
   .nav-dropdown-menu { display: none !important; }
   .hamburger { display: flex; }
   .site-footer { flex-direction: column; gap: 8px; text-align: center; padding: 20px; }
 }
+
+/* === SECTION UTILITY === */
+.section { padding: 70px 48px; }
+@media (max-width: 640px) { .section { padding: 40px 20px; } }
 
 /* === GRID HELPERS === */
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
@@ -138,14 +145,12 @@ img { max-width: 100%; display: block; }
 
 /* === RESPONSIVE GRID HELPERS === */
 @media (max-width: 1024px) {
-  .grid-4 { grid-template-columns: repeat(2, 1fr) !important; }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 900px) {
-  .grid-3 { grid-template-columns: repeat(2, 1fr) !important; }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 640px) {
-  .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr !important; }
-  .hero-grid { grid-template-columns: 1fr !important; }
-  section { padding: 40px 20px !important; }
-  .btn-primary, .btn-outline { width: 100%; justify-content: center; }
+  .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+  .hero-grid { grid-template-columns: 1fr; }
 }
