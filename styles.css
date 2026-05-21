@@ -146,6 +146,10 @@ img { max-width: 100%; display: block; }
   .nav-dropdown-menu { display: none !important; }
   .hamburger { display: flex; }
   .site-footer { flex-direction: column; gap: 8px; text-align: center; padding: 20px; }
+  .info-strip { flex-direction: column; padding: 16px 20px; gap: 0; }
+  .info-strip > div { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,.2); padding: 10px 16px; width: 100%; justify-content: flex-start; }
+  .info-strip > div:last-child { border-bottom: none; }
+  .hebammenhilfe-section { grid-template-columns: 1fr; gap: 24px; padding: 36px 20px; }
 }
 
 /* === SECTION UTILITY === */
