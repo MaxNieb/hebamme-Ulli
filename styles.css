@@ -188,3 +188,17 @@ a.card:focus-visible {
   outline: 2px solid var(--rose);
   outline-offset: 3px;
 }
+
+/* Responsive grid for 3-column Netzwerk layout */
+@media (max-width: 900px) {
+  .cards-3 { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 640px) {
+  .cards-3 { grid-template-columns: 1fr !important; }
+}
+
+.card a:focus-visible {
+  outline: 2px solid var(--rose);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
