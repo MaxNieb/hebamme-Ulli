@@ -210,3 +210,9 @@ section a:not([class]):focus-visible {
   outline-offset: 2px;
   border-radius: 2px;
 }
+
+/* Subpage 2-column grid → single column on mobile */
+@media (max-width: 768px) {
+  .subpage-2col { grid-template-columns: 1fr !important; gap: 24px !important; }
+  main { padding: 40px 20px !important; }
+}
