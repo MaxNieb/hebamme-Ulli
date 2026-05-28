@@ -1,3 +1,30 @@
+/* === SELF-HOSTED FONTS === */
+/* Cormorant Garamond — italic */
+@font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 400; font-display: swap; src: url('fonts/cormorant-garamond-italic-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 400; font-display: swap; src: url('fonts/cormorant-garamond-italic-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 600; font-display: swap; src: url('fonts/cormorant-garamond-italic-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 600; font-display: swap; src: url('fonts/cormorant-garamond-italic-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+/* Cormorant Garamond — normal */
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/cormorant-garamond-normal-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/cormorant-garamond-normal-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 600; font-display: swap; src: url('fonts/cormorant-garamond-normal-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 600; font-display: swap; src: url('fonts/cormorant-garamond-normal-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/cormorant-garamond-normal-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/cormorant-garamond-normal-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+/* DM Sans */
+@font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 300; font-display: swap; src: url('fonts/dm-sans-normal-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 300; font-display: swap; src: url('fonts/dm-sans-normal-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/dm-sans-normal-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/dm-sans-normal-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 500; font-display: swap; src: url('fonts/dm-sans-normal-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 500; font-display: swap; src: url('fonts/dm-sans-normal-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 600; font-display: swap; src: url('fonts/dm-sans-normal-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 600; font-display: swap; src: url('fonts/dm-sans-normal-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* === TAILWIND UTILITIES (ersetzt CDN) === */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+
 /* === CUSTOM PROPERTIES === */
 :root {
   --rose:       #c4867a;
@@ -77,6 +104,8 @@ img { max-width: 100%; display: block; }
 .card {
   background: #fff; border-radius: var(--card-radius); border: 1px solid var(--sand);
   transition: transform .25s, box-shadow .25s, border-color .25s;
+  position: relative;
+  overflow: hidden;
 }
 .card:hover {
   transform: translateY(-5px);
@@ -97,10 +126,13 @@ img { max-width: 100%; display: block; }
 .nav-links a:hover { color: var(--rose); }
 .nav-links a:focus-visible { color: var(--rose); outline: 2px solid var(--rose); outline-offset: 3px; border-radius: 3px; }
 .nav-dropdown { position: relative; }
+.nav-dropdown::after {
+  content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 12px;
+}
 .nav-dropdown-menu {
   display: none; position: absolute; top: calc(100% + 12px); left: 50%;
   transform: translateX(-50%); background: #fff; border: 1px solid var(--sand);
-  border-radius: 12px; padding: 8px 0; min-width: 180px;
+  border-radius: 12px; padding: 8px 0; min-width: 180px; list-style: none;
   box-shadow: 0 8px 24px rgba(107,63,54,0.12); z-index: 200;
 }
 .nav-dropdown:hover .nav-dropdown-menu { display: block; }
@@ -136,21 +168,39 @@ img { max-width: 100%; display: block; }
   outline-offset: 2px;
   border-radius: 2px;
 }
+.site-credit { opacity: .8; }
+.site-credit a { text-decoration: none; }
+.site-credit a:hover { text-decoration: underline; }
 
 /* === MOBILE === */
 @media (max-width: 768px) {
-  .site-nav { padding: 16px 20px; }
+  /* Nav layout: Logo links | Anfragen mitte | Burger rechts */
+  .site-nav { padding: 14px 20px; }
+  .nav-logo-name { white-space: nowrap; font-size: 18px; }
+  .site-nav .btn-primary { order: 2; font-size: 11px !important; padding: 5px 10px !important; letter-spacing: 0 !important; white-space: nowrap; width: auto !important; }
+  .hamburger { display: flex; order: 3; }
+
   .nav-links { display: none; flex-direction: column; gap: 0; position: absolute; top: 100%; left: 0; right: 0; background: var(--cream); border-bottom: 1px solid var(--sand); padding: 8px 0; z-index: 99; }
   .nav-links.open { display: flex; }
-  .nav-links a { padding: 12px 20px; text-transform: none; font-size: 14px; }
-  .nav-dropdown-menu { display: none !important; }
-  .hamburger { display: flex; }
+  .nav-links > li > a { padding: 12px 20px; text-transform: none; font-size: 14px; display: block; }
+  /* Leistungen submenu inline in mobile nav */
+  .nav-dropdown-menu {
+    display: none;
+    position: static !important; transform: none !important;
+    background: var(--cream-mid) !important; border: none !important;
+    box-shadow: none !important; border-radius: 0 !important;
+    padding: 0 !important; min-width: 0 !important;
+  }
+  .nav-links.open .nav-dropdown:hover .nav-dropdown-menu,
+  .nav-links.open .nav-dropdown-menu.open { display: block; }
+  .nav-dropdown-menu a { padding: 10px 20px 10px 32px !important; font-size: 13px !important; border-left: 2px solid var(--rose-light); color: var(--muted) !important; }
   .site-footer { flex-direction: column; gap: 8px; text-align: center; padding: 20px; }
   .info-strip { flex-direction: column; padding: 16px 20px; gap: 0; }
   .info-strip > div { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,.2); padding: 10px 16px; width: 100%; justify-content: flex-start; }
   .info-strip > div:last-child { border-bottom: none; }
-  .hebammenhilfe-section { grid-template-columns: 1fr; gap: 24px; padding: 36px 20px; }
+  .hebammenhilfe-section { grid-template-columns: 1fr !important; gap: 24px !important; padding: 36px 20px !important; }
   .kontakt-cta { padding: 48px 20px !important; }
+  .kontakt-cta-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
 }
 
 /* === SECTION UTILITY === */
@@ -226,14 +276,37 @@ input:focus-visible, textarea:focus-visible {
 
 /* === MOBILE FEINSCHLIFF === */
 @media (max-width: 640px) {
-  /* Buttons full-width on mobile */
+  /* Buttons full-width */
   .btn-primary, .btn-outline { width: 100%; justify-content: center; }
-  /* Hero min-height reset */
+
+  /* Hero */
   .hero-grid { min-height: auto; }
-  /* Über-mich section on homepage */
+  [style*="padding:80px 52px"] { padding: 44px 36px !important; }
+  [style*="min-height:540px"]  { min-height: 200px !important; }
+
+  /* Über-mich section */
   [style*="grid-template-columns:1fr 1.3fr"] { grid-template-columns: 1fr !important; }
-  /* Kontakt-CTA section padding */
-  [style*="padding:80px 48px"] { padding: 48px 20px !important; }
-  [style*="padding:60px 48px"] { padding: 40px 20px !important; }
+  [style*="padding:70px 52px"] { padding: 40px 20px !important; }
+
+  /* All major section paddings */
+  [style*="padding:80px 48px"] { padding: 44px 20px !important; }
   [style*="padding:70px 48px"] { padding: 40px 20px !important; }
+  [style*="padding:60px 48px"] { padding: 36px 20px !important; }
+  [style*="padding:44px 48px"] { padding: 32px 20px !important; }
+  [style*="padding:60px 48px 50px"] { padding: 36px 20px 32px !important; }
+
+  /* Kontakt form card */
+  [style*="padding:28px 32px"] { padding: 22px 18px !important; }
+
+  /* "Ulrike Bassenge" + Eyebrow im Hero ausblenden → direkt mit H1 starten */
+  .hero-grid [style*="margin-bottom:18px"] { display: none; }
+  /* Trust-Badges im Hero ausblenden */
+  .trust-badge { display: none !important; }
+
+  /* 2-column inline grids → single column */
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+
+  /* FAQ accordion — readable font on small screens */
+  details summary { font-size: 15px !important; }
+  details { padding: 16px 0 !important; }
 }

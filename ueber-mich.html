@@ -6,9 +6,13 @@
   <title>Über mich — Hebamme Ulrike Bassenge, Potsdam</title>
   <meta name="description" content="Ulrike Bassenge, Hebamme in Potsdam seit 2005. Ausgebildet in Berlin, Beleghebamme im Krankenhaus Waldfriede. Erfahren in Hausgeburten, Geburtshaus und Klinikgeburten.">
   <link rel="canonical" href="https://www.ulrike-bassenge.de/ueber-mich.html">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ulrike Bassenge – Hebamme Potsdam">
+  <meta property="og:url" content="https://www.ulrike-bassenge.de/ueber-mich.html">
+  <meta property="og:title" content="Über mich — Hebamme Ulrike Bassenge, Potsdam">
+  <meta property="og:description" content="Ulrike Bassenge, Hebamme in Potsdam seit 2005. Ausgebildet in Berlin, Beleghebamme im Krankenhaus Waldfriede. Erfahren in Hausgeburten, Geburtshaus und Klinikgeburten.">
+  <meta property="og:image" content="https://www.ulrike-bassenge.de/og-image.jpg">
+  <meta property="og:locale" content="de_DE">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -41,7 +45,7 @@
 
 <section style="background:var(--cream-mid);padding:60px 48px 50px;border-bottom:1px solid var(--sand);">
   <p class="section-label" style="margin-bottom:12px;">Über mich</p>
-  <h1 class="heading-xl" style="max-width:640px;margin-bottom:16px;">Über mich</h1>
+  <h1 class="heading-xl" style="max-width:640px;margin-bottom:16px;">Ulrike Bassenge — Ihre Hebamme in Potsdam seit 2005</h1>
   <p class="body-text" style="max-width:600px;">Ich bin Ulrike Bassenge, freiberufliche Hebamme in Potsdam seit 2005 — und ich begleite Sie mit Herz, Fachkenntnis und echtem Interesse an Ihrer Geschichte.</p>
 </section>
 
@@ -82,6 +86,7 @@
 
 <footer class="site-footer">
   <span>© 2026 Ulrike Bassenge · Hebamme Potsdam</span>
+  <span class="site-credit">♥ Website von <a href="https://onlinevibe.de" target="_blank" rel="noopener noreferrer">Onlinevibe</a></span>
   <span>
     <a href="impressum.html">Impressum</a> &nbsp;·&nbsp;
     <a href="datenschutz.html">Datenschutz</a>
@@ -91,7 +96,19 @@
 <script>
   const hamburger = document.getElementById('hamburger');
   const navLinks  = document.getElementById('nav-links');
-  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  hamburger.addEventListener('click', function() {
+    const isOpen = navLinks.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  document.querySelectorAll('.nav-dropdown > a').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        const menu = this.parentElement.querySelector('.nav-dropdown-menu');
+        if (menu) menu.classList.toggle('open');
+      }
+    });
+  });
 </script>
 </body>
 </html>

@@ -6,9 +6,13 @@
   <title>Kontakt — Hebamme Ulrike Bassenge, Potsdam</title>
   <meta name="description" content="Kontaktieren Sie Hebamme Ulrike Bassenge in Potsdam. Telefon, SMS oder E-Mail — ich antworte persönlich. Kontaktformular online.">
   <link rel="canonical" href="https://www.ulrike-bassenge.de/kontakt.html">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ulrike Bassenge – Hebamme Potsdam">
+  <meta property="og:url" content="https://www.ulrike-bassenge.de/kontakt.html">
+  <meta property="og:title" content="Kontakt — Hebamme Ulrike Bassenge, Potsdam">
+  <meta property="og:description" content="Kontaktieren Sie Hebamme Ulrike Bassenge in Potsdam. Telefon, SMS oder E-Mail — ich antworte persönlich. Kontaktformular online.">
+  <meta property="og:image" content="https://www.ulrike-bassenge.de/og-image.jpg">
+  <meta property="og:locale" content="de_DE">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -52,7 +56,7 @@
       <h2 class="heading-md" style="margin-bottom:24px;">So erreichen Sie mich</h2>
       <div style="display:flex;flex-direction:column;gap:20px;">
         <div style="display:flex;gap:16px;align-items:flex-start;">
-          <span style="font-size:24px;">📞</span>
+          <span style="display:flex;align-items:center;justify-content:center;width:36px;height:36px;flex-shrink:0;font-size:20px;line-height:1;padding-top:1px;">📞</span>
           <div>
             <p style="font-weight:600;color:var(--rose-dark);margin-bottom:4px;">Telefon &amp; SMS</p>
             <a href="tel:015231810104" style="font-size:20px;font-family:var(--font-serif);color:var(--rose);">0152 3181 0104</a>
@@ -60,14 +64,14 @@
           </div>
         </div>
         <div style="display:flex;gap:16px;align-items:flex-start;">
-          <span style="font-size:24px;">✉</span>
+          <span style="display:flex;align-items:center;justify-content:center;width:36px;height:36px;flex-shrink:0;font-size:20px;line-height:1;padding-top:1px;">✉️</span>
           <div>
             <p style="font-weight:600;color:var(--rose-dark);margin-bottom:4px;">E-Mail</p>
             <a href="mailto:info@ulrike-bassenge.de" style="font-size:16px;color:var(--rose);">info@ulrike-bassenge.de</a>
           </div>
         </div>
         <div style="display:flex;gap:16px;align-items:flex-start;">
-          <span style="font-size:24px;">📍</span>
+          <span style="display:flex;align-items:center;justify-content:center;width:36px;height:36px;flex-shrink:0;font-size:20px;line-height:1;padding-top:1px;">📍</span>
           <div>
             <p style="font-weight:600;color:var(--rose-dark);margin-bottom:4px;">Adresse</p>
             <p class="body-text">Haeckelstraße 1<br>14471 Potsdam</p>
@@ -108,6 +112,7 @@
 
 <footer class="site-footer">
   <span>© 2026 Ulrike Bassenge · Hebamme Potsdam</span>
+  <span class="site-credit">♥ Website von <a href="https://onlinevibe.de" target="_blank" rel="noopener noreferrer">Onlinevibe</a></span>
   <span>
     <a href="impressum.html">Impressum</a> &nbsp;·&nbsp;
     <a href="datenschutz.html">Datenschutz</a>
@@ -117,7 +122,19 @@
 <script>
   const hamburger = document.getElementById('hamburger');
   const navLinks  = document.getElementById('nav-links');
-  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  hamburger.addEventListener('click', function() {
+    const isOpen = navLinks.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  document.querySelectorAll('.nav-dropdown > a').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        const menu = this.parentElement.querySelector('.nav-dropdown-menu');
+        if (menu) menu.classList.toggle('open');
+      }
+    });
+  });
 </script>
 </body>
 </html>
