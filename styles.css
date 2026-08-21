@@ -282,7 +282,8 @@ input:focus-visible, textarea:focus-visible {
   /* Hero */
   .hero-grid { min-height: auto; }
   [style*="padding:80px 52px"] { padding: 44px 36px !important; }
-  [style*="min-height:680px"]  { min-height: 200px !important; }
+  [style*="min-height:680px"]  { min-height: 420px !important; }
+  [style*="min-height:680px"] img { object-position: center 20%; }
 
   /* Über-mich section */
   [style*="grid-template-columns:1fr 1.3fr"] { grid-template-columns: 1fr !important; }
